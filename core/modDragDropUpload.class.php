@@ -13,7 +13,7 @@ class modDragDropUpload extends DolibarrModules
         $this->numero = 570000;
 
         // Module name and description
-        $this->rights_class = 'dragdropupload';
+        $this->rights_class = 'draganddrop';
         $this->family = 'Tools';
         $this->name = 'Drag & Drop Upload';
         $this->description = 'Module to upload files via drag and drop.';
@@ -21,17 +21,17 @@ class modDragDropUpload extends DolibarrModules
 
         // Module editor and icon
         $this->editor_name = "Future House Store";
-        $this->picto = 'dragdropupload@dragdropupload'; // Icon
+        $this->picto = 'draganddrop@draganddrop'; // Icon
 
         // Module constants
-        $this->const_name = 'MAIN_MODULE_DRAGDROPUPLOAD';
+        $this->const_name = 'MAIN_MODULE_DRAGANDDROP';
         $this->special = 0;
 
         // Required Dolibarr version
         $this->depends = array();
         $this->requiredby = array();
         $this->phpmin = array(7, 0); // Minimum PHP version required
-        $this->langfiles = array("dragdropupload@dragdropupload");
+        $this->langfiles = array("draganddrop@draganddrop");
 
         // Module parts
         $this->module_parts = array(
@@ -39,7 +39,7 @@ class modDragDropUpload extends DolibarrModules
         );
 
         // Configuration page
-        $this->config_page_url = array('setup.php@dragdropupload');
+        $this->config_page_url = array('setup.php@draganddrop');
 
         // Dictionaries, boxes, and permissions
         $this->dictionaries = array();
@@ -60,13 +60,13 @@ class modDragDropUpload extends DolibarrModules
                 'fk_menu' => 'fk_mainmenu=tools',
                 'type' => 'top',
                 'titre' => 'Drag & Drop Upload',
-                'mainmenu' => 'dragdropupload',
+                'mainmenu' => 'draganddrop',
                 'leftmenu' => '',
-                'url' => '/custom/dragdropupload/admin/setup.php',
-                'langs' => 'dragdropupload@dragdropupload',
+                'url' => '/custom/draganddrop/admin/setup.php',
+                'langs' => 'draganddrop@draganddrop',
                 'position' => 500,
-                'enabled' => '$conf->dragdropupload->enabled', // Ensure this module is enabled
-                'perms' => '$user->rights->dragdropupload->upload',
+                'enabled' => '$conf->draganddrop->enabled', // Ensure this module is enabled
+                'perms' => '$user->rights->draganddrop->upload',
                 'target' => '',
                 'user' => 2
             )
