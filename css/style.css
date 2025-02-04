@@ -1,0 +1,17 @@
+#dropzone {
+    border: 2px dashed #ccc;
+    padding: 50px;
+    text-align: center;
+    color: #aaa;
+    margin: 20px 0;
+}
+
+#dropzone.dragover {
+    border-color: #000;
+    color: #000;
+}
+
+#uploadStatus {
+    margin: 20px 0;
+    color: #000;
+}
